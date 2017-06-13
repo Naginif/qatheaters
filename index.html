@@ -51,6 +51,9 @@
 					<li class="page-scroll">
 						<a href="#booking">Ticket bookings</a>
 					</li>
+					<li class="page-scroll">
+						<a href="#contact">Contact</a>
+					</li>
 				</ul>
 			</div><!-- /.navbar-collapse -->
 		</div><!-- /.container-fluid -->
@@ -269,7 +272,7 @@
 		</div>
 	</section>
 
-	<!-- Contact Section -->
+	<!-- Booking Section -->
 	<section id="booking">
 		<div class="container">
 			<div class="row">
@@ -319,6 +322,51 @@
 			</div>
 		</div>
 	</section>
+
+	<!-- Contact Section -->
+	<section id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h2>Contact Us</h2>
+					<hr class="star-primary">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+					<!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+					<form id="contactForm" name="sentMessage" novalidate="">
+						<div class="row control-group">
+							<div class="form-group col-xs-12 floating-label-form-group controls">
+								<label for="email">Email Address</label> <input class="form-control" data-validation-required-message="Please enter your email address." id="email" placeholder="Email Address" required="" type="email">
+								<p class="help-block text-danger"></p>
+							</div>
+						</div>
+						<div class="row control-group">
+							<div class="form-group col-xs-12 floating-label-form-group controls">
+								<label for="name">Subject</label> <input class="form-control" data-validation-required-message="Please enter your subject field." id="subject" placeholder="Name" required="" type="text">
+								<p class="help-block text-danger"></p>
+							</div>
+						</div>
+						<div class="row control-group">
+							<div class="form-group col-xs-12 floating-label-form-group controls">
+								<label for="message">Message</label> 
+								<textarea class="form-control" data-validation-required-message="Please enter a message." id="message" placeholder="Message" required="" rows="5"></textarea>
+								<p class="help-block text-danger"></p>
+							</div>
+						</div><br>
+						<div id="success"></div>
+						<div class="row">
+							<div class="form-group col-xs-12">
+								<button class="btn btn-success btn-lg" type="submit">Send</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>	
 
 	
 	
