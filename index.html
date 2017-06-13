@@ -379,7 +379,9 @@
 						<div id="success"></div>
 						<div class="row">
 							<div class="form-group col-xs-12">
-								<button class="btn btn-success btn-lg" type="submit">Send</button>
+								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#payment">
+ 									 Purchase Tickets
+								</button>
 							</div>
 						</div>
 					</form>
@@ -654,6 +656,28 @@
 				</div>
 			</div>
 		</div>
+
+		<div aria-hidden="true" class="portfolio-modal modal fade" id="payment" role="dialog" tabindex="-1">
+		<div class="modal-content">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl"></div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2">
+						<div class="modal-body">
+							<h2>Ticket Payment</h2>
+							<hr class="star-primary">
+							<p>Payment info will go here</p>	
+						<button class="btn btn-default" data-dismiss="modal" id="btnSubmit" type="button"><i class="fa fa-times"></i> Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	</div><!-- jQuery -->
 	<script src="vendor/jquery/jquery.min.js">
 	</script> <!-- Bootstrap Core JavaScript -->
