@@ -736,7 +736,7 @@
 						<div id="success"></div>
 						<div class="row">
 							<div class="form-group col-xs-12">
-								<button class="btn btn-success btn-lg" type="submit">Book Ticket(s)</button>
+								<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#payment">Purchase</button>
 							</div>
 						</div>
 					</form>
@@ -1005,6 +1005,7 @@
 				</div>
 			</div>
 		</div>
+		</div>
 
 		<div aria-hidden="true" class="portfolio-modal modal fade" id="payment" role="dialog" tabindex="-1">
 		<div class="modal-content">
@@ -1018,8 +1019,32 @@
 					<div class="col-lg-8 col-lg-offset-2">
 						<div class="modal-body">
 							<h2>Ticket Payment</h2>
-							<hr class="star-primary">
-							<p>Payment info will go here</p>	
+							<div class="row control-group">
+							<div class="form-group col-xs-12 floating-label-form-group controls">
+								<label for="fName">First Name</label> <input class="form-control" data-validation-required-message="Please enter your name." id="name" placeholder="First Name" required="" type="text">
+								<p class="help-block text-danger"></p>
+							</div>
+						</div>
+						<div class="row control-group">
+							<div class="form-group col-xs-12 floating-label-form-group controls">
+								<label for="lName">Last Name</label> <input class="form-control" data-validation-required-message="Please enter your name." id="name" placeholder="Last Name" required="" type="text">
+								<p class="help-block text-danger"></p>
+							</div>
+						</div>
+						<div class="row control-group">
+							<div class="form-group col-xs-12 floating-label-form-group controls">
+								<label for="CreditCard">Credit Card Number</label> <input class="form-control" data-validation-required-message="Enter Your Credit Card Number" id="childSeats" placeholder="Credit Card Number" required="" type="text">
+								<p class="help-block text-danger"></p>
+							</div>
+						</div
+						<div class="row control-group">
+							<div class="form-group col-xs-12 floating-label-form-group controls">
+								<label for="ccv">CCV</label> <input class="form-control" data-validation-required-message="Enter Your CCV" id="childSeats" placeholder="CCV" required="" type="text">
+								<p class="help-block text-danger"></p>
+							</div>
+						</div>
+						<hr class="star-primary">
+								
 						<button class="btn btn-default" data-dismiss="modal" id="btnSubmit" type="button"><i class="fa fa-times"></i> Close</button>
 						</div>
 					</div>
